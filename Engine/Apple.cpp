@@ -31,6 +31,11 @@ void Apple::respawn(std::mt19937 & rng)
 	coord.y = yDist(rng);
 }
 
+Coords Apple::getCoords()
+{
+	return coord;
+}
+
 
 
 

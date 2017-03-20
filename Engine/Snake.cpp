@@ -86,10 +86,10 @@ void Snake::Segment::draw(Board& brd)
 
 bool Snake::Segment::checkInGrid()
 {
-	return coords.x <= 40 &&
+	return coords.x < 40 &&
 		coords.x >= 0 &&
 		coords.y >= 0 &&
-		coords.y <= 30;
+		coords.y < 30;
 
 }
 

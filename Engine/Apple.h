@@ -9,6 +9,7 @@ class Apple
 		void Draw();
 		bool checkEaten(Coords& coords);
 		void respawn(std::mt19937& rng);
+		Coords getCoords();
 
 	private:	
 		

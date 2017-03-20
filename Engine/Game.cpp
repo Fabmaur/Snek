@@ -110,6 +110,9 @@ void Game::ComposeFrame()
 				rock[n].Draw(brd);
 				if (rock[n].checkTouch(snake.getCoord())) {
 					game = false;
+				if (rock[n].checkTouch(apple.getCoords())) {
+					apple.respawn(rng);
+				}
 				}
 			}
 			snake.Draw(brd);
